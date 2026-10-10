@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Abhishek Kumar | Data Scientist & Analytics Engineer | abhicodes.online</title>
+  <meta name="title" content="Abhishek Kumar | Data Scientist & Analytics Engineer | abhicodes.online">
+  <meta name="description" content="Portfolio of Abhishek Kumar (Abhi) - Data Scientist & Analytics Engineer specializing in predictive modeling, distributed systems (Apache Spark, SQL, pgvector), and GenAI/LLM pipelines.">
+  <meta name="keywords" content="Data Scientist, Data Analyst, Machine Learning Engineer, Abhishek Kumar, abhicodes, Python, SQL, Apache Spark, TensorFlow, RAG, pgvector, Vercel">
+  <meta name="author" content="Abhishek Kumar">
+  <link rel="canonical" href="https://abhicodes.online/">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abhicodes.online/">
+  <meta property="og:title" content="Abhishek Kumar | Data Scientist & Analytics Engineer">
+  <meta property="og:description" content="Explore end-to-end data science projects, distributed Spark ML, RAG vector platforms, and predictive analytics.">
+  <meta property="og:image" content="https://abhicodes.online/assets/images/hero-visual.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://abhicodes.online/">
+  <meta property="twitter:title" content="Abhishek Kumar | Data Scientist & Analytics Engineer">
+  <meta property="twitter:description" content="Explore end-to-end data science projects, distributed Spark ML, RAG vector platforms, and predictive analytics.">
+  <meta property="twitter:image" content="https://abhicodes.online/assets/images/hero-visual.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abhishek Kumar",
+    "alternateName": "Abhi",
+    "url": "https://abhicodes.online/",
+    "sameAs": [
+      "https://github.com/abhik99",
+      "https://linkedin.com/in/abhik99",
+      "https://twitter.com/akdevilboy",
+      "https://medium.com/@a99k"
+    ],
+    "jobTitle": "Data Scientist & Analytics Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Independent Analytics & AI Research"
+    },
+    "knowsAbout": ["Data Science", "Machine Learning", "Apache Spark", "SQL", "Python", "Deep Learning", "LLMs", "RAG", "Data Analytics"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" id="brandLogo">
+        <div class="logo-badge">AK</div>
+        <span>abhicodes<span class="gradient-text">.online</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#sandbox" class="nav-link">Data Sandbox</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#workflow" class="nav-link">Architecture</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Light/Dark Theme" title="Toggle Theme">
+          <span id="themeIcon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+
+        <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>Open for Data Science &amp; Data Analyst Roles</span>
+        </div>
+
+        <h1 class="hero-title">
+          Engineering Data Intelligence From <span class="gradient-text">Raw Telemetry</span> To <span class="gradient-text-alt">Production ML</span>
+        </h1>
+
+        <p class="hero-description">
+          Hi, I'm <strong>Abhishek Kumar</strong> (@abhicodes). I bridge business analytics with production machine learning, distributed computing (Apache Spark, SQL, pgvector), and generative AI platforms. I transform ambiguous multi-terabyte data into verified business decisions.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Case Studies</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <a href="#sandbox" class="btn btn-secondary">
+            <span>Interactive Data Sandbox</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </a>
+          <button class="btn btn-secondary" id="copyEmailBtn" title="Copy email to clipboard">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Copy Email</span>
+          </button>
+        </div>
+
+        <div class="hero-quick-meta">
+          <div class="quick-meta-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Delhi, India (Open to Remote / Hybrid / Global)</span>
+          </div>
+          <div class="quick-meta-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span>GitHub: <a href="https://github.com/abhik99" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan); text-decoration:none;">@abhik99</a></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card -->
+      <div class="hero-visual-card">
+        <div class="hero-image-wrapper">
+          <img src="assets/images/hero-visual.jpg" alt="Production Neural Network & Data Telemetry Architecture" class="hero-image" loading="eager">
+          <div class="hero-card-overlay">
+            <div>
+              <span class="live-badge">Live System Architecture</span>
+              <h3 style="font-size: 1.1rem; margin-top: 0.35rem; color: #fff;">Telemetry &amp; RAG Vector Intelligence</h3>
+            </div>
+            <a href="https://coursera-multimodal-intelligence-pl.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="font-size:0.8rem; padding: 0.4rem 0.8rem;">
+              Live on Vercel ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Counter Banner -->
+  <section class="metrics-section">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <span class="metric-number gradient-text">85,900+</span>
+          <span class="metric-label">Customer Records Analyzed</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-number gradient-text-alt">97 / 97</span>
+          <span class="metric-label">Production Pytest Specs Passed</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-number gradient-text">26+</span>
+          <span class="metric-label">GitHub Repositories</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-number gradient-text-alt">&lt; 300ms</span>
+          <span class="metric-label">Vercel Edge &amp; RAG Latency</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Data Science & Analytics Sandbox -->
+  <section class="sandbox-section" id="sandbox">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Demonstration</span>
+        <h2 class="section-title">Data Science &amp; Analytics Sandbox</h2>
+        <p class="section-subtitle">
+          Test interactive ML threshold decision logic, SQL performance queries, and business metrics directly in your browser.
+        </p>
+      </div>
+
+      <div class="sandbox-container">
+        <!-- Sandbox Header Controls -->
+        <div class="sandbox-header">
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            <span style="font-weight:700; font-size:1.05rem;">Live Model &amp; Analytics Playground</span>
+          </div>
+
+          <div class="sandbox-tabs">
+            <button class="sandbox-tab-btn active" data-target="tabConfusionMatrix">Threshold &amp; Confusion Matrix</button>
+            <button class="sandbox-tab-btn" data-target="tabSqlConsole">SQL Query Benchmarks</button>
+            <button class="sandbox-tab-btn" data-target="tabRetailTrends">Retail Cohort Analytics</button>
+          </div>
+        </div>
+
+        <!-- Sandbox Body -->
+        <div class="sandbox-body">
+          
+          <!-- Pane 1: Confusion Matrix & ROC Simulator -->
+          <div class="sandbox-tab-pane active" id="tabConfusionMatrix">
+            <div class="cm-layout">
+              <div>
+                <div class="control-slider-group">
+                  <div class="slider-label-row">
+                    <span>Classification Decision Threshold (&tau;)</span>
+                    <span style="font-family:var(--font-mono); color:var(--accent-cyan);" id="thresholdValDisplay">0.50</span>
+                  </div>
+                  <input type="range" class="custom-range-slider" id="thresholdSlider" min="0.10" max="0.90" step="0.02" value="0.50">
+                  <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.4rem;">
+                    Slide to simulate how moving classification threshold impacts True Positives vs False Alarms in fraud / conversion detection.
+                  </p>
+                </div>
+
+                <!-- 2x2 Matrix Grid -->
+                <div class="matrix-grid">
+                  <div class="matrix-cell tp">
+                    <span style="font-size:0.75rem; text-transform:uppercase; color:#34d399; font-weight:700;">True Positive (TP)</span>
+                    <div class="cell-count" id="valTP" style="color:#34d399;">1,040</div>
+                    <span style="font-size:0.7rem; color:var(--text-muted);">Correct conversions</span>
+                  </div>
+                  <div class="matrix-cell fp">
+                    <span style="font-size:0.75rem; text-transform:uppercase; color:#fbbf24; font-weight:700;">False Positive (FP)</span>
+                    <div class="cell-count" id="valFP" style="color:#fbbf24;">412</div>
+                    <span style="font-size:0.7rem; color:var(--text-muted);">False alarms</span>
+                  </div>
+                  <div class="matrix-cell fn">
+                    <span style="font-size:0.75rem; text-transform:uppercase; color:#f87171; font-weight:700;">False Negative (FN)</span>
+                    <div class="cell-count" id="valFN" style="color:#f87171;">160</div>
+                    <span style="font-size:0.7rem; color:var(--text-muted);">Missed conversions</span>
+                  </div>
+                  <div class="matrix-cell tn">
+                    <span style="font-size:0.75rem; text-transform:uppercase; color:#38bdf8; font-weight:700;">True Negative (TN)</span>
+                    <div class="cell-count" id="valTN" style="color:#38bdf8;">3,388</div>
+                    <span style="font-size:0.7rem; color:var(--text-muted);">Correct rejections</span>
+                  </div>
+                </div>
+
+                <!-- Dynamic Statistical Metrics -->
+                <div class="calc-metrics-grid">
+                  <div class="calc-metric-pill">
+                    <span style="font-size:0.75rem; color:var(--text-muted);">Precision</span>
+                    <div class="calc-metric-val" id="metricPrecision">71.6%</div>
+                  </div>
+                  <div class="calc-metric-pill">
+                    <span style="font-size:0.75rem; color:var(--text-muted);">Recall (TPR)</span>
+                    <div class="calc-metric-val" id="metricRecall" style="color:#34d399;">86.7%</div>
+                  </div>
+                  <div class="calc-metric-pill">
+                    <span style="font-size:0.75rem; color:var(--text-muted);">F1-Score</span>
+                    <div class="calc-metric-val" id="metricF1" style="color:#a78bfa;">78.4%</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Interactive SVG ROC Curve -->
+              <div style="background:rgba(7,9,14,0.6); padding:1.5rem; border-radius:var(--radius-md); border:1px solid var(--border-subtle); text-align:center;">
+                <div style="display:flex; justify-content:space-between; margin-bottom:0.75rem; font-size:0.85rem; font-weight:600;">
+                  <span>Receiver Operating Characteristic (ROC)</span>
+                  <span style="color:var(--accent-emerald); font-family:var(--font-mono);">AUC = 0.914</span>
+                </div>
+                <svg viewBox="0 0 300 240" style="width:100%; max-height:220px; overflow:visible;" id="rocCurveSvg">
+                  <!-- Grid Lines -->
+                  <line x1="40" y1="20" x2="40" y2="200" stroke="rgba(255,255,255,0.1)" stroke-width="1"></line>
+                  <line x1="40" y1="200" x2="280" y2="200" stroke="rgba(255,255,255,0.1)" stroke-width="1"></line>
+                  
+                  <!-- Diagonal Random Chance Baseline -->
+                  <line x1="40" y1="200" x2="280" y2="20" stroke="rgba(255,255,255,0.2)" stroke-dasharray="4" stroke-width="1"></line>
+
+                  <!-- Empirical Model ROC Curve -->
+                  <path d="M 40 200 C 60 80, 110 35, 280 20" fill="none" stroke="var(--accent-cyan)" stroke-width="3"></path>
+
+                  <!-- Dynamic Threshold Marker Point -->
+                  <circle id="rocMarkerPoint" cx="95" cy="50" r="7" fill="#10b981" stroke="#fff" stroke-width="2" style="filter:drop-shadow(0 0 6px #10b981); transition: cx 0.2s, cy 0.2s;"></circle>
+
+                  <!-- Labels -->
+                  <text x="160" y="222" font-size="11" fill="var(--text-muted)" text-anchor="middle">False Positive Rate (FPR)</text>
+                  <text x="18" y="115" font-size="11" fill="var(--text-muted)" text-anchor="middle" transform="rotate(-90 18,115)">True Positive Rate (Recall)</text>
+                </svg>
+                <span style="font-size:0.75rem; color:var(--text-muted); display:block; margin-top:0.5rem;">
+                  🟢 Marker shifts smoothly along ROC curve as threshold changes
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 2: SQL Console Simulator -->
+          <div class="sandbox-tab-pane" id="tabSqlConsole">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; flex-wrap:wrap; gap:0.75rem;">
+              <div style="display:flex; align-items:center; gap:0.5rem;">
+                <label for="sqlQuerySelect" style="font-size:0.85rem; font-weight:600; color:var(--text-secondary);">Select Case Study Query:</label>
+                <select id="sqlQuerySelect" style="padding:0.4rem 0.8rem; background:rgba(7,9,14,0.8); border:1px solid var(--border-subtle); color:var(--text-primary); border-radius:6px; font-family:inherit; font-size:0.85rem; cursor:pointer;">
+                  <option value="rfm">1. RFM Customer Segmentation &amp; Spend (Retail)</option>
+                  <option value="csat">2. DeepCSAT SLA &amp; Handling Correlation (NLP)</option>
+                  <option value="spark">3. Distributed Spark Marketing Conversion (Fintech)</option>
+                </select>
+              </div>
+              <span id="sqlExecTime" style="font-size:0.8rem; font-family:var(--font-mono); color:var(--accent-emerald);">Executed in 11.4 ms</span>
+            </div>
+
+            <div class="sql-console">
+              <div>
+                <span style="font-size:0.75rem; text-transform:uppercase; color:var(--text-muted); font-weight:700; display:block; margin-bottom:0.4rem;">SQL Query Structure</span>
+                <pre class="sql-editor" id="sqlCodeView"></pre>
+              </div>
+              <div>
+                <span style="font-size:0.75rem; text-transform:uppercase; color:var(--text-muted); font-weight:700; display:block; margin-bottom:0.4rem;">Query Execution Results</span>
+                <div class="sql-result-table-wrapper">
+                  <table class="data-table">
+                    <thead id="sqlTableHead"></thead>
+                    <tbody id="sqlTableBody"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 3: Retail Trends & Cohorts -->
+          <div class="sandbox-tab-pane" id="tabRetailTrends">
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:2rem; align-items:center;">
+              <div>
+                <h4 style="font-size:1.15rem; font-weight:700; margin-bottom:0.5rem;">Retail Department Sales &amp; Promotional Elasticity</h4>
+                <p style="font-size:0.9rem; color:var(--text-secondary); line-height:1.6; margin-bottom:1rem;">
+                  Analysis derived from the <em>Integrated Retail Analytics</em> case study. Shows how targeted markdowns surge weekly volume by <strong>+34.2%</strong> while maintaining a <strong>19.8%</strong> margin baseline over 45 monitored retail department hubs.
+                </p>
+                <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+                  <div style="padding:0.75rem 1.25rem; background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); border-radius:var(--radius-sm);">
+                    <span style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Holiday Lift</span>
+                    <div style="font-size:1.3rem; font-weight:700; color:var(--accent-emerald); font-family:var(--font-mono);">+34.2%</div>
+                  </div>
+                  <div style="padding:0.75rem 1.25rem; background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); border-radius:var(--radius-sm);">
+                    <span style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Markdowns Evaluated</span>
+                    <div style="font-size:1.3rem; font-weight:700; color:var(--accent-cyan); font-family:var(--font-mono);">5 Tiers</div>
+                  </div>
+                  <div style="padding:0.75rem 1.25rem; background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); border-radius:var(--radius-sm);">
+                    <span style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase;">Model R&sup2; Score</span>
+                    <div style="font-size:1.3rem; font-weight:700; color:#a78bfa; font-family:var(--font-mono);">0.932</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Visual Preview -->
+              <div style="border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--border-subtle); box-shadow:var(--shadow-md);">
+                <img src="assets/images/analytics-preview.jpg" alt="Retail Revenue and Cohort Retention Dashboard" style="width:100%; height:auto; display:block;">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Curated Case Studies</span>
+        <h2 class="section-title">Production ML, GenAI &amp; Data Analytics</h2>
+        <p class="section-subtitle">
+          Real-world applications tested, benchmarked, and containerized. Every project links directly to verified source code.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects (11)</button>
+        <button class="filter-btn" data-filter="genai">GenAI &amp; LLMs</button>
+        <button class="filter-btn" data-filter="ml">Predictive ML &amp; Deep Learning</button>
+        <button class="filter-btn" data-filter="bigdata">Big Data &amp; Distributed Systems</button>
+        <button class="filter-btn" data-filter="analytics">Data Analytics &amp; EDA</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1: Coursera Multimodal Platform (Flagship) -->
+        <article class="project-card glass-panel featured" data-category="genai ml">
+          <div class="project-card-image-box">
+            <img src="assets/images/rag-preview.jpg" alt="Coursera Multimodal Intelligence Platform" class="project-card-img">
+            <span class="project-category-badge">Flagship GenAI &bull; Live on Vercel</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Coursera Multimodal Intelligence Platform</h3>
+            <p class="project-summary">
+              Enterprise learning analytics &amp; grounded RAG platform. Ingests video transcripts (SRT) and readings into 384-dimensional dense vector embeddings in PostgreSQL pgvector with Gemini 2.5 Flash anti-hallucination guardrails.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">pgvector</span>
+              <span class="tech-tag">Gemini 2.5</span>
+              <span class="tech-tag">React 19</span>
+              <span class="tech-tag">Vercel Edge</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="#" class="btn btn-secondary btn-sm open-modal-btn" data-project="coursera">Deep Dive &amp; Metrics</a>
+              <div class="project-links-row">
+                <a href="https://coursera-multimodal-intelligence-pl.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Live Web App on Vercel">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com/abhik99/Coursera-Multimodal-Intelligence-Platform" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: IndustryGPT / TransportGPT -->
+        <article class="project-card glass-panel" data-category="genai">
+          <div class="project-card-image-box">
+            <img src="assets/images/hero-visual.jpg" alt="IndustryGPT Logistics LLM" class="project-card-img">
+            <span class="project-category-badge">Domain LLM &bull; QLoRA</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">IndustryGPT / TransportGPT</h3>
+            <p class="project-summary">
+              Specialized 1.1-billion parameter LLM fine-tuned for logistics and freight operations using QLoRA (Rank 16) and 4-bit NormalFloat quantization. Combines FAISS vector database for zero-hallucination procedure lookup.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">TinyLlama-1.1B</span>
+              <span class="tech-tag">PEFT / QLoRA</span>
+              <span class="tech-tag">FAISS</span>
+              <span class="tech-tag">Hugging Face TRL</span>
+              <span class="tech-tag">Gradio</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="#" class="btn btn-secondary btn-sm open-modal-btn" data-project="transportgpt">Deep Dive &amp; Metrics</a>
+              <div class="project-links-row">
+                <a href="https://github.com/abhik99/TransportGPT" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: DeepCSAT Customer Satisfaction -->
+        <article class="project-card glass-panel" data-category="ml analytics">
+          <div class="project-card-image-box">
+            <img src="assets/images/analytics-preview.jpg" alt="DeepCSAT E-Commerce Satisfaction Prediction" class="project-card-img">
+            <span class="project-category-badge">Deep Learning &bull; 85k Records</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">DeepCSAT: E-Commerce Satisfaction Prediction</h3>
+            <p class="project-summary">
+              End-to-end predictive deep learning system for 85,907 customer interactions. Employs 6-layer Deep Artificial Neural Network (TensorFlow/Keras), SMOTE imbalance handling, TF-IDF NLP on feedback remarks, and interactive Streamlit UI.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">Keras</span>
+              <span class="tech-tag">SMOTE</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Streamlit</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="#" class="btn btn-secondary btn-sm open-modal-btn" data-project="deepcsat">Deep Dive &amp; Metrics</a>
+              <div class="project-links-row">
+                <a href="https://github.com/abhik99/DeepCSAT-E-Commerce-Customer-Satisfaction-Score-Prediction" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Distributed Spark ML for Term Deposits -->
+        <article class="project-card glass-panel" data-category="bigdata ml">
+          <div class="project-card-image-box">
+            <img src="assets/images/spark-preview.jpg" alt="Apache Spark Distributed Machine Learning" class="project-card-img">
+            <span class="project-category-badge">Big Data &bull; PySpark</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Distributed ML for Term Deposit Prediction</h3>
+            <p class="project-summary">
+              Full big data banking pipeline exercising Hadoop HDFS storage, HiveQL warehousing, Spark ML distributed classifiers, and Spark Structured Streaming for simulated real-time transaction monitoring on marketing cohorts.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Apache Spark</span>
+              <span class="tech-tag">PySpark ML</span>
+              <span class="tech-tag">Hadoop</span>
+              <span class="tech-tag">Hive</span>
+              <span class="tech-tag">Streaming</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="#" class="btn btn-secondary btn-sm open-modal-btn" data-project="distributedml">Deep Dive &amp; Metrics</a>
+              <div class="project-links-row">
+                <a href="https://github.com/abhik99/Distributed-Machine-Learning-for-Term-Deposit-Subscription-Prediction" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Voyage Analytics Production MLOps -->
+        <article class="project-card glass-panel" data-category="ml bigdata">
+          <div class="project-card-image-box">
+            <img src="assets/images/spark-preview.jpg" alt="Voyage Analytics Production MLOps" class="project-card-img">
+            <span class="project-category-badge">MLOps &bull; Docker &bull; MLflow</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Voyage Analytics: Production MLOps in Travel</h3>
+            <p class="project-summary">
+              Productionized machine learning pipeline featuring Docker containers, Jenkins automation, MLflow model tracking, and dual models (flight pricing regression + passenger propensity) deployed with Streamlit.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">MLflow</span>
+              <span class="tech-tag">Jenkins</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Streamlit</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="#" class="btn btn-secondary btn-sm open-modal-btn" data-project="voyage">Deep Dive &amp; Metrics</a>
+              <div class="project-links-row">
+                <a href="https://github.com/abhik99/Voyage-Analytics-Integrating-MLOps-in-Travel" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: Integrated Retail Analytics -->
+        <article class="project-card glass-panel" data-category="analytics ml">
+          <div class="project-card-image-box">
+            <img src="assets/images/analytics-preview.jpg" alt="Integrated Retail Analytics for Store Optimization" class="project-card-img">
+            <span class="project-category-badge">Business Analytics &bull; Forecasting</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Integrated Retail Analytics for Store Optimization</h3>
+            <p class="project-summary">
+              Store department sales forecasting model analyzing holiday markdown promotional impacts, regional unemployment indexes, and fuel price volatility to optimize replenishment and retail inventory levels.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Regression</span>
+              <span class="tech-tag">Seaborn</span>
+              <span class="tech-tag">KPI Modeling</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="#" class="btn btn-secondary btn-sm open-modal-btn" data-project="retail">Deep Dive &amp; Metrics</a>
+              <div class="project-links-row">
+                <a href="https://github.com/abhik99/Integrated-Retail-Analytics-for-Store-Optimization" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 7: Hotel Booking Demand EDA -->
+        <article class="project-card glass-panel" data-category="analytics">
+          <div class="project-card-image-box">
+            <img src="assets/images/analytics-preview.jpg" alt="Hotel Booking Demand Analysis" class="project-card-img">
+            <span class="project-category-badge">Exploratory Data Analysis</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Hotel Booking Demand EDA &amp; Revenue Strategy</h3>
+            <p class="project-summary">
+              Granular exploratory analysis on 119k hotel booking records. Discovers cancellation predictors, ADR seasonality spikes, lead-time thresholds, and customer distribution channels.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">EDA</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Revenue Analysis</span>
+              <span class="tech-tag">Matplotlib</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/abhik99/eda_hotelbooking_analysis" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View on GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 8: DeepFER Facial Emotion Recognition -->
+        <article class="project-card glass-panel" data-category="ml">
+          <div class="project-card-image-box">
+            <img src="assets/images/hero-visual.jpg" alt="DeepFER Facial Emotion Recognition" class="project-card-img">
+            <span class="project-category-badge">Computer Vision &bull; CNN</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">DeepFER: Real-Time Facial Emotion Classifier</h3>
+            <p class="project-summary">
+              Deep convolutional neural network model trained to detect facial boundaries using Haar Cascades and classify human emotional states into 7 affective classes in real-time camera feeds.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">CNN</span>
+              <span class="tech-tag">Deep Learning</span>
+              <span class="tech-tag">Python</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/abhik99/DeepFER-Facial-Emotion-Recognition-Using-Deep-Learning" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View on GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 9: Seoul Bike Sharing Demand Prediction -->
+        <article class="project-card glass-panel" data-category="ml analytics">
+          <div class="project-card-image-box">
+            <img src="assets/images/analytics-preview.jpg" alt="Bike Sharing Demand Prediction" class="project-card-img">
+            <span class="project-category-badge">Time Series &bull; Regression</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Seoul Bike Sharing Demand Prediction</h3>
+            <p class="project-summary">
+              Regression modeling forecasting hourly urban bike rentals based on solar radiation, temperature, rainfall, humidity, and public holiday calendar cycles.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Regression</span>
+              <span class="tech-tag">Time Series</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Feature Engineering</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/abhik99/Bike-sharing-demand-prediction" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View on GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 10: Twitter Sentiment Analysis -->
+        <article class="project-card glass-panel" data-category="analytics ml">
+          <div class="project-card-image-box">
+            <img src="assets/images/rag-preview.jpg" alt="Coronavirus Tweet Sentiment Analysis" class="project-card-img">
+            <span class="project-category-badge">Natural Language Processing</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">COVID-19 Social Sentiment Analysis</h3>
+            <p class="project-summary">
+              NLP text classification pipeline evaluating global pandemic sentiment trends. Utilizes regex text cleaning, stopword filtration, n-gram vectorization, and multi-class classification.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">Text Tokenization</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Classification</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/abhik99/sentiment_analysis_covid19" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View on GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 11: Netflix Content Analytics -->
+        <article class="project-card glass-panel" data-category="analytics">
+          <div class="project-card-image-box">
+            <img src="assets/images/hero-visual.jpg" alt="Netflix Movies and Shows Analysis" class="project-card-img">
+            <span class="project-category-badge">Unsupervised Clustering</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Netflix Content Clustering &amp; Trends</h3>
+            <p class="project-summary">
+              Comprehensive exploratory segmentation on the global Netflix media library. Evaluates director co-occurrence clusters, genre migration trends, maturity ratings, and international content growth.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Clustering</span>
+              <span class="tech-tag">K-Means</span>
+              <span class="tech-tag">Seaborn</span>
+              <span class="tech-tag">EDA</span>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/abhik99/Netflix_movies_tvshows" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">View on GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills & Stack Matrix -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Competencies &amp; Toolkit</span>
+        <h2 class="section-title">Technical Expertise Matrix</h2>
+        <p class="section-subtitle">
+          Full spectrum analytical skills spanning statistical modeling, database architectures, machine learning frameworks, and production operations.
+        </p>
+      </div>
+
+      <div class="skills-categories-grid">
+
+        <!-- 1. Languages & Querying -->
+        <div class="skill-category-card glass-panel">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <div>
+              <h3 class="skill-cat-title">Languages &amp; Querying</h3>
+              <span style="font-size:0.8rem; color:var(--text-muted);">Core computational foundations</span>
+            </div>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-item-info"><span>Python (NumPy, SciPy, Pandas)</span><span>95%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="95%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>SQL (PostgreSQL, MySQL, SQLite)</span><span>92%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="92%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>C++ &amp; Systems Scripting</span><span>75%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>Bash / Linux Environment</span><span>88%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="88%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Data Analytics & Business Intelligence -->
+        <div class="skill-category-card glass-panel">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"></path><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path></svg>
+            </div>
+            <div>
+              <h3 class="skill-cat-title">Analytics &amp; BI</h3>
+              <span style="font-size:0.8rem; color:var(--text-muted);">Insights &amp; Executive Reporting</span>
+            </div>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-item-info"><span>Power BI &amp; DAX Modeling</span><span>90%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>Tableau Dashboards</span><span>85%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>Advanced MS Excel (VBA/Pivot)</span><span>94%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="94%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>Hypothesis Testing &amp; A/B Testing</span><span>88%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="88%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Machine Learning & Deep Learning -->
+        <div class="skill-category-card glass-panel">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+            </div>
+            <div>
+              <h3 class="skill-cat-title">ML &amp; Deep Learning</h3>
+              <span style="font-size:0.8rem; color:var(--text-muted);">Predictive modeling &amp; vision</span>
+            </div>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-item-info"><span>Scikit-Learn (Ensembles, Regressors)</span><span>94%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="94%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>TensorFlow &amp; Keras (ANN / CNN)</span><span>88%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>OpenCV Computer Vision</span><span>82%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>SMOTE, Feature Engineering &amp; PCA</span><span>90%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="90%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Big Data & Distributed Computing -->
+        <div class="skill-category-card glass-panel">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <div>
+              <h3 class="skill-cat-title">Big Data &amp; Distributed</h3>
+              <span style="font-size:0.8rem; color:var(--text-muted);">Terabyte-scale analytics</span>
+            </div>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-item-info"><span>Apache Spark &amp; PySpark ML</span><span>86%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="86%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>Hadoop HDFS Storage</span><span>80%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>Apache Hive Data Warehousing</span><span>82%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>Spark Structured Streaming</span><span>78%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="78%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. GenAI, LLMs & Vector Retrieval -->
+        <div class="skill-category-card glass-panel">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <div>
+              <h3 class="skill-cat-title">GenAI &amp; Vectors</h3>
+              <span style="font-size:0.8rem; color:var(--text-muted);">RAG pipelines &amp; LLM fine-tuning</span>
+            </div>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-item-info"><span>PostgreSQL pgvector (HNSW)</span><span>92%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="92%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>PEFT / QLoRA Parameter Adaptation</span><span>85%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>FAISS Semantic Vector Search</span><span>88%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>Google Gemini API &amp; Anti-Hallucination</span><span>90%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="90%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. MLOps & Production Hosting -->
+        <div class="skill-category-card glass-panel">
+          <div class="skill-category-header">
+            <div class="skill-cat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <div>
+              <h3 class="skill-cat-title">MLOps &amp; Hosting</h3>
+              <span style="font-size:0.8rem; color:var(--text-muted);">Deployment &amp; Edge Delivery</span>
+            </div>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-item-info"><span>Vercel Global Edge Hosting</span><span>96%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="96%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>Docker &amp; Container Orchestration</span><span>86%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="86%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>MLflow Experiment Tracking</span><span>82%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-info"><span>Automated Pytest &amp; CI/CD</span><span>92%</span></div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="92%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture & Engineering Workflow Section -->
+  <section class="workflow-section" id="workflow">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Methodology</span>
+        <h2 class="section-title">Production Data Lifecycle</h2>
+        <p class="section-subtitle">
+          How I architect robust end-to-end data systems from raw telemetry to low-latency edge deployment.
+        </p>
+      </div>
+
+      <div class="workflow-card glass-panel">
+        <div class="workflow-steps-grid">
+          <div class="workflow-step">
+            <span class="step-number">STEP 01</span>
+            <h4 class="step-title">Ingestion &amp; Cleansing</h4>
+            <p class="step-desc">
+              Deterministic parsing of multi-modal files (SRT transcripts, CSV/Parquet, transactional logs). Handling high sparsity, timestamp synchronization, and schema verification.
+            </p>
+          </div>
+          <div class="workflow-step">
+            <span class="step-number">STEP 02</span>
+            <h4 class="step-title">EDA &amp; Vectorization</h4>
+            <p class="step-desc">
+              Lagged feature engineering, SMOTE balancing, TF-IDF text features, and dense 384-dimensional vector embeddings indexed with HNSW cosine similarity.
+            </p>
+          </div>
+          <div class="workflow-step">
+            <span class="step-number">STEP 03</span>
+            <h4 class="step-title">Distributed Modeling</h4>
+            <p class="step-desc">
+              Model training via PySpark ML, TensorFlow ANNs, or QLoRA fine-tuning. Strict validation using ROC-AUC, cross-validation, and EvidenceValidator anti-hallucination guardrails.
+            </p>
+          </div>
+          <div class="workflow-step">
+            <span class="step-number">STEP 04</span>
+            <h4 class="step-title">Edge Deployment</h4>
+            <p class="step-desc">
+              Automated testing via 97+ Pytest specs, containerization with Docker, and sub-300ms edge routing deployed globally on Vercel and cloud backends.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Abhishek Section -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-avatar-card glass-panel">
+        <div class="avatar-img-wrapper">
+          <img src="assets/images/avatar.png" alt="Abhishek Kumar" class="avatar-img" onerror="this.src='https://avatars.githubusercontent.com/u/32831536?v=4'">
+        </div>
+        <div>
+          <h3 style="font-size: 1.4rem; font-weight: 800;">Abhishek Kumar</h3>
+          <p style="color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem;">Data Scientist &amp; Analytics Specialist</p>
+          <span style="color: var(--text-muted); font-size: 0.85rem;">Delhi, India</span>
+        </div>
+
+        <div class="social-links-row">
+          <a href="https://github.com/abhik99" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub: @abhik99">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/abhik99" target="_blank" rel="noopener noreferrer" class="icon-btn" title="LinkedIn: Abhishek Kumar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://medium.com/@a99k" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Medium: @a99k">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75 0-3.17.53-5.75 1.19-5.75.66 0 1.19 2.58 1.19 5.75z"/></svg>
+          </a>
+          <a href="https://twitter.com/akdevilboy" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Twitter/X: @akdevilboy">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.936 9.936 0 0024 4.59z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:1.25rem;">
+        <span class="section-tag">Profile &amp; Background</span>
+        <h2 style="font-size:2.3rem; font-weight:800; letter-spacing:-0.02em;">
+          Turning Data Complexity into Strategic Competitive Advantage
+        </h2>
+        <p style="color:var(--text-secondary); line-height:1.7;">
+          I am a Data Scientist and Analytics Specialist with hands-on expertise building production systems across e-commerce, banking, logistics, and ed-tech. My technical focus spans <strong>statistical hypothesis testing</strong>, <strong>distributed PySpark pipelines</strong>, and <strong>domain-specific Large Language Models</strong>.
+        </p>
+        <p style="color:var(--text-secondary); line-height:1.7;">
+          Recently, I served as the Testing, Integration, and Deployment Lead for the <em>Coursera Multimodal Intelligence Platform</em>, engineering comprehensive 97-spec automated Pytest suites and deploying the live system on Vercel Global Edge CDN.
+        </p>
+
+        <div style="display:flex; gap:1.25rem; flex-wrap:wrap; margin-top:0.5rem;">
+          <a href="#contact" class="btn btn-primary">Let's Discuss Roles</a>
+          <a href="https://github.com/abhik99" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <span>Explore 26+ Repos on GitHub</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <div class="contact-info">
+          <span class="section-tag">Initiate Contact</span>
+          <h2 style="font-size:2.4rem; font-weight:800; letter-spacing:-0.02em;">
+            Let's Build Impactful Data Solutions Together
+          </h2>
+          <p style="color:var(--text-secondary); line-height:1.7;">
+            Whether you are recruiting for a <strong>Data Scientist</strong>, <strong>Senior Data Analyst</strong>, or <strong>Machine Learning Engineer</strong> role, or looking for an analytics collaboration, my inbox is open.
+          </p>
+
+          <div class="contact-details-list">
+            <div class="contact-detail-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <span style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; font-weight:700;">Direct Email</span>
+                <div style="font-weight:600;"><a href="mailto:akdevil27boy@gmail.com" style="color:var(--text-primary); text-decoration:none;">akdevil27boy@gmail.com</a></div>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div>
+                <span style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; font-weight:700;">LinkedIn Profile</span>
+                <div style="font-weight:600;"><a href="https://linkedin.com/in/abhik99" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan); text-decoration:none;">linkedin.com/in/abhik99</a></div>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <div>
+                <span style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; font-weight:700;">Official Domain</span>
+                <div style="font-weight:600;"><a href="https://abhicodes.online/" style="color:var(--accent-emerald); text-decoration:none;">https://abhicodes.online/</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="contactName" class="form-label">Your Name</label>
+            <input type="text" id="contactName" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+          </div>
+          <div class="form-group">
+            <label for="contactEmail" class="form-label">Your Work Email</label>
+            <input type="email" id="contactEmail" class="form-input" placeholder="e.g. sarah@techcorp.com" required>
+          </div>
+          <div class="form-group">
+            <label for="contactMessage" class="form-label">Role or Project Details</label>
+            <textarea id="contactMessage" class="form-textarea" placeholder="Tell me about your team's opening, data challenges, or timeline..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; padding-block:0.9rem;">
+            <span>Send Direct Message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Vercel Deployment & Domain Notice -->
+      <div class="vercel-domain-banner">
+        <div style="display:flex; align-items:center; gap:1rem;">
+          <svg width="28" height="28" viewBox="0 0 76 65" fill="#fff"><path d="M37.5274 0L75.0548 65H0L37.5274 0Z"/></svg>
+          <div>
+            <h4 style="font-size:1rem; font-weight:700;">Hosting Target: Vercel &bull; abhicodes.online</h4>
+            <p style="font-size:0.85rem; color:var(--text-secondary);">
+              This website is configured for instant zero-config Vercel deployment with <code>vercel.json</code>, global edge caching, and SSL on <strong>https://abhicodes.online/</strong>.
+            </p>
+          </div>
+        </div>
+        <a href="#about" class="btn btn-secondary btn-sm" onclick="alert('To link your domain in Vercel:\n1. Run `vercel deploy` or import from GitHub.\n2. In Vercel Project Settings > Domains, add: abhicodes.online\n3. Set your DNS A record to 76.76.21.21 or CNAME to cname.vercel-dns.com.'); return false;">
+          Domain Setup Instructions
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Project Case Study Modal -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span style="font-size:0.75rem; text-transform:uppercase; color:var(--accent-cyan); font-weight:700; letter-spacing:0.05em;" id="modalCategory">Category</span>
+          <h3 style="font-size:1.6rem; font-weight:800; margin-top:0.25rem;" id="modalTitle">Project Title</h3>
+          <p style="font-size:0.95rem; color:var(--text-secondary); margin-top:0.25rem;" id="modalTagline">Tagline</p>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Case Study Details">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-meta-grid" id="modalMetaGrid"></div>
+
+        <div>
+          <h4 style="font-size:1.1rem; font-weight:700; margin-bottom:0.6rem;">Architecture &amp; Problem Overview</h4>
+          <p style="color:var(--text-secondary); line-height:1.7;" id="modalOverview"></p>
+        </div>
+
+        <div>
+          <h4 style="font-size:1.1rem; font-weight:700; margin-bottom:0.6rem;">Key Technical Deliverables &amp; Outcomes</h4>
+          <ul style="color:var(--text-secondary); line-height:1.7; padding-left:1.5rem; display:flex; flex-direction:column; gap:0.5rem;" id="modalDeliverables"></ul>
+        </div>
+
+        <div style="display:flex; gap:1rem; flex-wrap:wrap; padding-top:1rem; border-top:1px solid var(--border-subtle);" id="modalActions"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div style="display:flex; align-items:center; gap:0.75rem;">
+          <div class="logo-badge" style="width:30px; height:30px; font-size:0.9rem;">AK</div>
+          <span style="font-weight:700;">Abhishek Kumar &bull; <span class="gradient-text">abhicodes.online</span></span>
+        </div>
+
+        <div style="display:flex; gap:1.5rem; font-size:0.85rem;">
+          <a href="#hero" style="color:var(--text-secondary); text-decoration:none;">Top</a>
+          <a href="#sandbox" style="color:var(--text-secondary); text-decoration:none;">Sandbox</a>
+          <a href="#projects" style="color:var(--text-secondary); text-decoration:none;">Projects</a>
+          <a href="#skills" style="color:var(--text-secondary); text-decoration:none;">Skills</a>
+          <a href="https://github.com/abhik99" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan); text-decoration:none;">GitHub</a>
+          <a href="https://linkedin.com/in/abhik99" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan); text-decoration:none;">LinkedIn</a>
+        </div>
+      </div>
+
+      <div style="text-align:center; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,0.05);">
+        <p class="footer-copy">
+          &copy; 2026 Abhishek Kumar. Designed with modern web standards for production deployment on Vercel. Canonical domain: <strong>https://abhicodes.online/</strong>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
