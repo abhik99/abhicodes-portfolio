@@ -919,6 +919,127 @@ body {
   transform: translateY(-2px);
 }
 
+/* Publications & Academic Research Section */
+.publications-section {
+  padding-block: 6rem;
+  border-top: 1px solid var(--border-subtle);
+  background: radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 60%);
+  position: relative;
+}
+
+.publication-card {
+  border-color: rgba(139, 92, 246, 0.35);
+  box-shadow: 0 10px 35px rgba(139, 92, 246, 0.12);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.publication-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-violet), var(--accent-cyan), var(--accent-emerald));
+}
+
+.pub-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.pub-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+.pub-pill-doi {
+  background: rgba(6, 182, 212, 0.12);
+  color: var(--accent-cyan);
+  border: 1px solid var(--border-accent);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.pub-pill-doi:hover {
+  background: var(--accent-cyan);
+  color: #07090e;
+  transform: translateY(-1px);
+}
+
+.pub-pill-venue {
+  background: rgba(139, 92, 246, 0.12);
+  color: var(--accent-violet);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.pub-pill-status {
+  background: rgba(16, 185, 129, 0.12);
+  color: var(--accent-emerald);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.pub-title {
+  font-size: clamp(1.35rem, 2.2vw, 1.85rem);
+  font-weight: 800;
+  line-height: 1.35;
+  color: var(--text-primary);
+  letter-spacing: -0.015em;
+}
+
+.pub-author {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pub-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: 1rem;
+  margin-block: 0.5rem;
+}
+
+.pub-metric-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  text-align: center;
+}
+
+.pub-metric-val {
+  font-size: 1.6rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--accent-cyan);
+}
+
+.pub-metric-lbl {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-top: 0.25rem;
+}
+
 /* Skills Section */
 .skills-section {
   padding-block: 6rem;

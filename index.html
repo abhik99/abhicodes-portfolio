@@ -39,25 +39,43 @@
 
   <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Abhishek Kumar",
-    "alternateName": "Abhi",
-    "url": "https://abhicodes.online/",
-    "sameAs": [
-      "https://github.com/abhik99",
-      "https://linkedin.com/in/abhik99",
-      "https://twitter.com/akdevilboy",
-      "https://medium.com/@a99k"
-    ],
-    "jobTitle": "Data Scientist & Analytics Engineer",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Independent Analytics & AI Research"
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Abhishek Kumar",
+      "alternateName": "Abhi",
+      "url": "https://abhicodes.online/",
+      "sameAs": [
+        "https://github.com/abhik99",
+        "https://linkedin.com/in/abhik99",
+        "https://twitter.com/akdevilboy",
+        "https://medium.com/@a99k"
+      ],
+      "jobTitle": "Data Scientist & Analytics Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Independent Analytics & AI Research"
+      },
+      "knowsAbout": ["Data Science", "Machine Learning", "Apache Spark", "SQL", "Python", "Deep Learning", "LLMs", "RAG", "Data Analytics"]
     },
-    "knowsAbout": ["Data Science", "Machine Learning", "Apache Spark", "SQL", "Python", "Deep Learning", "LLMs", "RAG", "Data Analytics"]
-  }
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "name": "Resource-Efficient Fine-Tuning of Compact LLMs for Supply Chain Operations: A Hybrid QLoRA and RAG Approach",
+      "author": {
+        "@type": "Person",
+        "name": "Abhishek Kumar"
+      },
+      "url": "https://doi.org/10.5281/zenodo.23326308",
+      "sameAs": "https://doi.org/10.5281/zenodo.23326308",
+      "description": "Investigates resource-efficient fine-tuning of compact LLMs (TinyLlama-1.1B) on single commodity GPUs using 4-bit QLoRA and FAISS-powered RAG for zero-hallucination supply chain operations.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Zenodo"
+      }
+    }
+  ]
   </script>
 </head>
 <body>
@@ -75,6 +93,7 @@
           <li><a href="#hero" class="nav-link active">Home</a></li>
           <li><a href="#sandbox" class="nav-link">Data Sandbox</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#publications" class="nav-link">Research</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#workflow" class="nav-link">Architecture</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
@@ -440,20 +459,29 @@
             <span class="project-category-badge">Domain LLM &bull; QLoRA</span>
           </div>
           <div class="project-card-body">
-            <h3 class="project-title">IndustryGPT / TransportGPT</h3>
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:0.5rem; flex-wrap:wrap;">
+              <h3 class="project-title" style="margin-bottom:0;">IndustryGPT / TransportGPT</h3>
+              <a href="https://doi.org/10.5281/zenodo.23326308" target="_blank" rel="noopener noreferrer" style="background:rgba(139,92,246,0.18); color:#c4b5fd; border:1px solid rgba(139,92,246,0.4); font-size:0.72rem; padding:0.2rem 0.55rem; border-radius:999px; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:0.35rem;" title="View Peer-Reviewed Paper on Zenodo">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                Published Paper &bull; DOI
+              </a>
+            </div>
             <p class="project-summary">
-              Specialized 1.1-billion parameter LLM fine-tuned for logistics and freight operations using QLoRA (Rank 16) and 4-bit NormalFloat quantization. Combines FAISS vector database for zero-hallucination procedure lookup.
+              Specialized 1.1-billion parameter LLM fine-tuned for logistics and freight operations using QLoRA (Rank 16) and 4-bit NormalFloat quantization. Backed by published peer-reviewed research (<a href="https://doi.org/10.5281/zenodo.23326308" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan); text-decoration:none;">DOI: 10.5281/zenodo.23326308</a>) and FAISS vector retrieval for zero-hallucination SOP execution.
             </p>
             <div class="project-tags">
               <span class="tech-tag">TinyLlama-1.1B</span>
               <span class="tech-tag">PEFT / QLoRA</span>
-              <span class="tech-tag">FAISS</span>
+              <span class="tech-tag">FAISS RAG</span>
               <span class="tech-tag">Hugging Face TRL</span>
               <span class="tech-tag">Gradio</span>
             </div>
             <div class="project-card-footer">
               <a href="#" class="btn btn-secondary btn-sm open-modal-btn" data-project="transportgpt">Deep Dive &amp; Metrics</a>
               <div class="project-links-row">
+                <a href="https://doi.org/10.5281/zenodo.23326308" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Read Research Paper (DOI: 10.5281/zenodo.23326308)">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                </a>
                 <a href="https://github.com/abhik99/TransportGPT" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub Repository">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                 </a>
@@ -693,6 +721,89 @@
           </div>
         </article>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications & Peer-Reviewed Research Section -->
+  <section class="publications-section" id="publications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Research &amp; Peer-Reviewed Work</span>
+        <h2 class="section-title">Published Research Papers</h2>
+        <p class="section-subtitle">
+          Scientific scholarship advancing parameter-efficient fine-tuning (PEFT), domain-adapted Small Language Models (SLMs), and grounded enterprise RAG architectures.
+        </p>
+      </div>
+
+      <div class="publication-card glass-panel">
+        <div class="pub-badge-row">
+          <span class="pub-pill pub-pill-status">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+            Peer-Reviewed &bull; Open Access
+          </span>
+          <a href="https://doi.org/10.5281/zenodo.23326308" target="_blank" rel="noopener noreferrer" class="pub-pill pub-pill-doi" title="Permanent Digital Object Identifier (DOI)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            DOI: 10.5281/zenodo.23326308
+          </a>
+          <span class="pub-pill pub-pill-venue">
+            Zenodo &bull; CERN Open Science Repository
+          </span>
+          <span class="pub-pill" style="background:rgba(255,255,255,0.05); color:var(--text-secondary); border:1px solid var(--border-subtle);">
+            Master's Thesis &bull; Woolf University
+          </span>
+        </div>
+
+        <div>
+          <h3 class="pub-title">
+            Resource-Efficient Fine-Tuning of Compact LLMs for Supply Chain Operations: A Hybrid QLoRA and RAG Approach
+          </h3>
+          <div class="pub-author" style="margin-top: 0.6rem;">
+            <strong>Abhishek Kumar</strong>
+            <span style="color:var(--text-muted);">&bull;</span>
+            <span>Master's in Computer Science: Artificial Intelligence and Machine Learning, Woolf University</span>
+          </div>
+        </div>
+
+        <p style="color:var(--text-secondary); line-height:1.75; font-size:1rem;">
+          Large Language Models frequently hallucinate regarding proprietary enterprise Standard Operating Procedures (SOPs), while cloud models introduce high recurring costs and privacy vulnerabilities. This paper details the end-to-end development, optimization, and edge deployment of <strong>IndustryGPT</strong>—a specialized 1.1-billion parameter logistics LLM adapted using 4-bit QLoRA on a single commodity 16 GB NVIDIA T4 GPU. We engineer a programmatic bypass for Turing-class GPUs lacking native BFloat16 hardware and couple the model with a FAISS vector database to dynamically inject verified warehouse SOPs (inbound scanning, tally reconciliations, and fleet maintenance). The system achieves sub-second latency, zero hallucinations, and 100% adherence to injected company policies.
+        </p>
+
+        <!-- Benchmark Highlights Grid -->
+        <div class="pub-metrics-grid">
+          <div class="pub-metric-box">
+            <div class="pub-metric-val">0.38s</div>
+            <div class="pub-metric-lbl">Time to First Token (TTFT)</div>
+          </div>
+          <div class="pub-metric-box">
+            <div class="pub-metric-val">34.6</div>
+            <div class="pub-metric-lbl">Tokens / Sec (TPS)</div>
+          </div>
+          <div class="pub-metric-box">
+            <div class="pub-metric-val">100%</div>
+            <div class="pub-metric-lbl">Policy Adherence (RAG)</div>
+          </div>
+          <div class="pub-metric-box">
+            <div class="pub-metric-val">16 GB T4</div>
+            <div class="pub-metric-lbl">Single Commodity GPU</div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div style="display:flex; gap:1rem; flex-wrap:wrap; align-items:center; padding-top:0.75rem; border-top:1px solid var(--border-subtle);">
+          <a href="https://doi.org/10.5281/zenodo.23326308" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>Read Full Paper on Zenodo (DOI)</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+          <a href="https://github.com/abhik99/TransportGPT" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span>Companion Code (TransportGPT)</span>
+          </a>
+          <button class="btn btn-secondary" id="copyBibtexBtn" title="Copy BibTeX Citation to clipboard">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Copy BibTeX</span>
+          </button>
+        </div>
       </div>
     </div>
   </section>
@@ -1126,6 +1237,7 @@
           <a href="#hero" style="color:var(--text-secondary); text-decoration:none;">Top</a>
           <a href="#sandbox" style="color:var(--text-secondary); text-decoration:none;">Sandbox</a>
           <a href="#projects" style="color:var(--text-secondary); text-decoration:none;">Projects</a>
+          <a href="#publications" style="color:var(--text-secondary); text-decoration:none;">Research</a>
           <a href="#skills" style="color:var(--text-secondary); text-decoration:none;">Skills</a>
           <a href="https://github.com/abhik99" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan); text-decoration:none;">GitHub</a>
           <a href="https://linkedin.com/in/abhik99" target="_blank" rel="noopener noreferrer" style="color:var(--accent-cyan); text-decoration:none;">LinkedIn</a>

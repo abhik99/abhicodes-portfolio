@@ -370,18 +370,22 @@ const PROJECT_DETAILS = {
     category: 'Fine-Tuned LLMs & Domain RAG',
     tagline: 'Specialized 1.1B LLM fine-tuned with QLoRA and FAISS vector retrieval for logistics queries.',
     liveUrl: null,
+    paperUrl: 'https://doi.org/10.5281/zenodo.23326308',
     demoVideo: null,
     githubUrl: 'https://github.com/abhik99/TransportGPT',
     meta: {
-      role: 'NLP & Fine-Tuning Engineer',
+      role: 'Lead Author & Fine-Tuning Engineer',
       stack: 'TinyLlama-1.1B, Hugging Face TRL, QLoRA, FAISS, BitsAndBytes 4-bit, Gradio',
+      publication: 'Published on Zenodo (DOI: 10.5281/zenodo.23326308)',
+      thesis: "Master's in CS (AI & ML), Woolf University",
       dataset: '3,150 Custom Multi-Layer Logistic Dialogues',
       vram: 'Zero-cost Colab T4 (16GB VRAM) optimized'
     },
-    overview: `A high-efficiency Large Language Model specifically trained for transportation and freight customer operations. Integrates hybrid Bitext support dialogues with Kaggle operational status data and FAISS vector retrieval for zero-hallucination SOP execution.`,
+    overview: `A high-efficiency Large Language Model specifically trained for transportation and freight customer operations, backed by published research (DOI: 10.5281/zenodo.23326308). Integrates hybrid Bitext support dialogues with Kaggle operational status data and FAISS vector retrieval for zero-hallucination SOP execution.`,
     deliverables: [
-      'Implemented QLoRA (Rank 16, Alpha 32) parameter-efficient fine-tuning on TinyLlama 1.1B using BitsAndBytes NF4 quantization.',
-      'Integrated dense semantic search with FAISS and all-MiniLM-L6-v2 vector embeddings to inject ground-truth warehouse policies.',
+      'Authored published academic paper: "Resource-Efficient Fine-Tuning of Compact LLMs for Supply Chain Operations: A Hybrid QLoRA and RAG Approach" (DOI: 10.5281/zenodo.23326308).',
+      'Implemented QLoRA (Rank 16, Alpha 32) parameter-efficient fine-tuning on TinyLlama 1.1B using BitsAndBytes NF4 quantization and engineered Turing GPU BFloat16 precision bypass.',
+      'Integrated dense semantic search with FAISS and all-MiniLM-L6-v2 vector embeddings to inject ground-truth warehouse SOP policies, eliminating hallucinations.',
       'Developed real-time Gradio interactive web UI for testing logistics reasoning and shipping exception flows.'
     ]
   },
@@ -530,6 +534,12 @@ function populateModal(data) {
   const modalActions = document.getElementById('modalActions');
   if (modalActions) {
     let html = '';
+    if (data.paperUrl) {
+      html += `<a href="${data.paperUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+        Read Research Paper (DOI)
+      </a>`;
+    }
     if (data.liveUrl) {
       html += `<a href="${data.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
@@ -555,7 +565,24 @@ function populateModal(data) {
    ========================================================================== */
 function initContactInteractions() {
   const copyBtn = document.getElementById('copyEmailBtn');
+  const copyBibtexBtn = document.getElementById('copyBibtexBtn');
   const contactForm = document.getElementById('contactForm');
+
+  copyBibtexBtn?.addEventListener('click', () => {
+    const bibtex = `@article{kumar2026resource,
+  title={Resource-Efficient Fine-Tuning of Compact LLMs for Supply Chain Operations: A Hybrid QLoRA and RAG Approach},
+  author={Kumar, Abhishek},
+  journal={Zenodo},
+  year={2026},
+  doi={10.5281/zenodo.23326308},
+  url={https://doi.org/10.5281/zenodo.23326308}
+}`;
+    navigator.clipboard.writeText(bibtex).then(() => {
+      showToast('BibTeX citation copied to clipboard!');
+    }).catch(() => {
+      showToast('Citation DOI: 10.5281/zenodo.23326308');
+    });
+  });
 
   copyBtn?.addEventListener('click', () => {
     const email = 'akdevil27boy@gmail.com';
